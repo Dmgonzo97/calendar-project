@@ -1,14 +1,68 @@
 body {
-  font-family: "Aboreto", cursive;
+  font-family: "Roboto", sans-serif;
   background-image: url(images/4993643.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin: 50px 400px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 500px;
   border: 3px solid #e6af2e;
-  color: black;
-  background-color: aliceblue;
+  color: #6f3059;
+  background-color: #FE4F6B;
+  box-shadow: inset 0px -10px 20px 0px #2274a5;
+}
+
+.navbar > .month {
+  margin-left: 20px;
+}
+
+.navbar > .year {
+  margin-right: 20px;
+}
+
+.day-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid #e6af2e;
+  color: #6f3059;
+  background-color: #FE4F6B;
+  box-shadow: inset 0px -10px 20px 0px #2274a5;
+}
+
+.numerical-day-btns {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 30px;
+  border: 3px solid #e6af2e;
+  color: #6f3059;
+  background-color: #FE4F6B;
+}
+
+.numerical-day-btns button {
+  background: linear-gradient(135deg, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+  border: 1px solid #e6af2e;
+  margin: 20px 20px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  box-shadow: 5px 5px 15px 5px lightsteelblue;
+}
+
+.numerical-day-btns button:hover {
+  background-image: url(images/4993643.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prior-btn {
+  opacity: 0%;
 }/*# sourceMappingURL=calendar.css.map */
